@@ -2,36 +2,50 @@
 
 .banner {
     position: relative;
+    text-align: center;
+    color: #fff;
   }
   
   .banner-content {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: #fff;
-    max-width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   
-  @media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1rem;
+  }
+  
+  @media screen and (min-width: 768px) {
     .banner {
       height: 400px;
     }
   
-    .banner-content {
-      bottom: 10px;
-      left: 10px;
+    h1 {
+      font-size: 3rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
     }
   }
   
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 1024px) {
     .banner {
-      height: 300px;
+      height: 500px;
     }
   
-    .banner-content {
-      bottom: 5px;
-      left: 5px;
-      max-width: 300px;
+    h1 {
+      font-size: 4rem;
+    }
+  
+    h2 {
+      font-size: 2rem;
     }
   }
   
