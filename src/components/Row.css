@@ -1,27 +1,51 @@
-.row{
-    margin-left: 10px;
+/* Row.css */
+
+.row {
     margin-bottom: 20px;
-}
-
-.movies-row{
+  }
+  
+  .movies-row {
     display: flex;
-    overflow-x:scroll;
-    margin-top: 20px;
-
-}
-::-webkit-scrollbar{
-    display: none;
-}
-.movie{
-    width: 100%;
-    max-height: 200px;
-    margin-right: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 20px;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: transparent transparent; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+  
+  .movies-row::-webkit-scrollbar {
+    display: none; /* Webkit (Safari, Chrome) */
+  }
+  
+  .movie {
     object-fit: contain;
-    transition: transform 460ms;
-}
-.movie:hover{
-    transform: scale(1.06) ;
-}
-.movie-poster{
-    max-height: 350px;
-}
+    width: 100%;
+    max-width: 150px;
+    margin-right: 10px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .movie:hover {
+    transform: scale(1.08);
+  }
+  
+  @media screen and (min-width: 768px) {
+    .movies-row {
+      padding: 20px;
+    }
+  
+    .movie {
+      max-width: 200px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .movies-row {
+      padding: 20px;
+    }
+  
+    .movie {
+      max-width: 250px;
+    }
+  }
+  

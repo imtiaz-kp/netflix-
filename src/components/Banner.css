@@ -1,14 +1,37 @@
-.banner-content{
-    padding-left: 3rem;
-    padding-top: 450px;
-    width: 45rem;
+/* Banner.css */
 
-}
-.banner-content>h1{
-    font-size: 3rem;
-}
-
-.banner-content>h2{
-    font-size: 1rem;
-    padding-top: 1rem;
-}
+.banner {
+    position: relative;
+  }
+  
+  .banner-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    max-width: 500px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .banner {
+      height: 400px;
+    }
+  
+    .banner-content {
+      bottom: 10px;
+      left: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .banner {
+      height: 300px;
+    }
+  
+    .banner-content {
+      bottom: 5px;
+      left: 5px;
+      max-width: 300px;
+    }
+  }
+  
